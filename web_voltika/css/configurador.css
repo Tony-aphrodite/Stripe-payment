@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*html, body {
+  height: 100%;
+  font-family: sans-serif;
+}*/
+
+.contenedor {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.left {
+  width: 60%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.image-container img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.right {
+  margin-left: 60%;
+  width: 40%;
+  overflow-y: auto;
+  padding: 130px 20px 20px 20px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.menu button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.content {
+  height: auto;
+}
+
+.color-selector {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.color-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border 0.3s ease, transform 0.2s ease;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+  border: 3px solid #333;
+}
+
+.color-label {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  font-family: sans-serif;
+}
+
+@media (max-width: 600px) {
+  .color-selector {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    height: 30vh;
+    position: fixed;
+    top: 5vh;
+    left: 0;
+    display: flex;
+    justify-content: center;   /* Centrado horizontal */
+    align-items: flex-end;     /* Alineado abajo vertical */
+    padding-bottom: 10px;      /* Espacio opcional con el borde inferior */
+  }
+
+  .right {
+    margin-left: 0;
+    margin-top: 35vh;
+    width: 100%;
+    height: 70vh;
+    overflow-y: auto;
+    padding-top: 20px;
+  }
+}
+
+/* ===== SAFE VOLTIKA SLIDER ===== */
+
+#voltika-slider-wrapper{
+    position:relative;
+    width:100%;
+    height:100%;
+    min-height:calc(100vh - 75px);
+    overflow:hidden;
+}
+
+.voltika-slider{
+    display:flex;
+    width:100%;
+    height:100%;
+    transition: transform .4s ease;
+}
+
+.voltika-screen{
+    min-width:100%;
+    height:100%;
+    overflow-y:auto;
+    padding:120px 20px 75px;
+}
+
+/* DOT NAV SAFE */
+.voltika-dot-nav{
+    position:fixed;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:12px;
+    z-index:999999;
+}
+
+.voltika-dot{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:rgba(0,0,0,.3);
+    border:2px solid white;
+}
+
+.voltika-dot.active{
+    background:white;
+    transform:scale(1.2);
+}
+
+/* ===== STEP BAR REAL STYLE ===== */
+
+.voltika-dot-nav{
+    position:fixed;
+    bottom:35px;
+    left:50%;
+    transform:translateX(-50%);
+    width:80%;
+    max-width:600px;
+    z-index:999999;
+}
+
+/* Línea base gris */
+.voltika-steps-track{
+    position:relative;
+    width:100%;
+    height:4px;
+    background:#dcdcdc;
+}
+
+/* Línea progreso verde */
+.voltika-steps-progress{
+    position:absolute;
+    top:0;
+    left:0;
+    height:4px;
+    background:#7ED321;
+    width:0%;
+    transition:.4s ease;
+}
+
+/* Contenedor circulos */
+.voltika-steps-circles{
+    position:absolute;
+    top:-14px;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+/* Circulos */
+.voltika-dot{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:#dcdcdc;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    color:white;
+    font-size:15px;
+    transition:.3s;
+}
+
+/* Activo */
+.voltika-dot.active{
+    background:#7ED321;
+}
+
+/* Completado */
+.voltika-dot.completed{
+    background:#7ED321;
+}
+
+
+/*------ COLORES BOTONES ---------*/
+
+/* Simular gap 5px en Bootstrap 4 */
+.color-row {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+}
+
+.color-col {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+    margin-bottom: 5px;
+}
+
+/* Botón */
+.color-option {
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all .2s;
+    width: 100%;
+    font-weight: 500;
+}
+
+.color-option:hover {
+    border-color: #8BC34A;
+}
+
+.color-option.active {
+    border-color: #8BC34A;
+    box-shadow: 0 0 0 2px rgba(139,195,74,0.2);
+}
+
+/* Punto color */
+.color-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+/* Colores */
+.dot-black { background:#000; border-color:#000; }
+.dot-gray { background:#9e9e9e; }
+.dot-green { background:#8BC34A; border-color:#8BC34A; }
+.dot-white { background:#fff; }
+
+/*----------------- SLIDER -------------------*/
+
+.slider-container{
+    max-width:600px;
+    margin:auto;
+    padding:0px 20px;
+}
+
+.range-wrapper{
+    position:relative;
+    padding-top:50px;
+}
+
+/* Barra base */
+input[type=range]{
+    -webkit-appearance:none;
+    width:100%;
+    height:12px;
+    border-radius:20px;
+    outline:none;
+    background:linear-gradient(to right,#2d8ecf,#8bc34a);
+}
+
+/* Thumb */
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    background:#fff;
+    border:4px solid #4CAF50;
+    cursor:pointer;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    position:relative;
+    z-index:2;
+}
+
+input[type=range]::-moz-range-thumb{
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    background:#fff;
+    border:4px solid #4CAF50;
+    cursor:pointer;
+}
+
+/* Burbuja precio */
+.price-bubble{
+    position:absolute;
+    top:0;
+    background:#5e9f1c;
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+    font-size:24px;
+    font-weight:bold;
+    transform:translateX(-50%);
+    white-space:nowrap;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Texto min max */
+.range-labels{
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+    margin-top:10px;
+    color:#555;
+}
+
+@media(max-width:576px){
+    .price-bubble{
+        font-size:18px;
+        padding:8px 15px;
+    }
+}

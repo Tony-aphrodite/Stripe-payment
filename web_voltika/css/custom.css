@@ -1,0 +1,362 @@
+.barlow-thin {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .barlow-extralight {
+    font-family: "Barlow", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .barlow-light {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .barlow-regular {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .barlow-medium {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .barlow-semibold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .barlow-bold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .barlow-extrabold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .barlow-black {
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .barlow-thin-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .barlow-extralight-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .barlow-light-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .barlow-regular-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .barlow-medium-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .barlow-semibold-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .barlow-bold-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .barlow-extrabold-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .barlow-black-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+/* <uniquifier>: Use a unique and descriptive class name
+/ <weight>: Use a value from 200 to 800*/
+
+.manrope-light {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.manrope-bold {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.manrope {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+.subtitle {
+  text-align: center;
+  font-size: 22px;
+  color: #bbbbbb;
+  margin-bottom: 40px;
+}
+.label-center {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 30px;
+}
+select, input[type="range"] {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #1c1c1c;
+  border: 0px solid #444;
+  color: #fff;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 20px;
+  background: linear-gradient(90deg, #5a9a22 0%, #67dc00 100%);
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #008bcd;
+  cursor: pointer;
+}
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  color: #5a9a22;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+#kmLabel {
+  font-size: 34px;
+  color: #5a9a22;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 20px;
+}
+
+
+.centrado-texto{
+  display: flex;
+  justify-content: center;   /* Centrado horizontal */
+  align-items: center;       /* Centrado vertical */
+  height: 800px;             /* Alto completo de la ventana */
+}
+
+@media (max-width: 768px) {
+  .centrado-texto{
+  display: flex;
+  justify-content: center;   /* Centrado horizontal */
+  align-items: center;       /* Centrado vertical */
+  height: 300px;             /* Alto completo de la ventana */
+}
+}
+
+.text-container {
+      display: flex;
+      align-items: center;
+      height: 100%;}
+
+
+/*--------------------- SIMULADOR ---------------------*/
+
+.slider-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 20px;
+      background: #3a85ff;
+      border-radius: 50px;
+      outline: none;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border: 6px solid #3a85ff;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 0 5px #1a56db;
+      background-image: url('data:image/svg+xml;utf8,<svg fill="%233a85ff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px;
+    }
+
+    input[type=range]::-moz-range-thumb {
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border: 6px solid #3a85ff;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #km-display {
+      font-size: 3em;
+      color: #3a85ff;
+      font-weight: bold;
+    }
+
+    #slider-label {
+      margin-top: -10px;
+      font-weight: bold;
+      background-color: transparent;
+      color: #000;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      color: white;
+    }
+
+    .subtitle {
+      margin-top: 30px;
+      color: #ccc;
+      font-size: 1.2em;
+    }
+
+    .card-voltika {
+      border: 1px solid #898989;
+      border-radius: 12px;
+      padding: 15px 10px 10px;
+      text-align: center;
+      /*background: linear-gradient(150deg, #ffffff90 0%, #ffffff45 100%);*/
+      background-color: #2f2f2f27;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .card-voltika.selected {
+      color: #fff;
+      background-color: #0062ff;
+      box-shadow: 0 0 15px #00a6ff;
+      border: 2px solid #00a6ff;
+    }
+
+    .card-voltika img {
+      width: 100%;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .modelo {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    .autonomia {
+      color: #fdb813;
+      margin-bottom: 5px;
+    }
+
+    .categoria {
+      color: #88b4ff;
+      font-size: 0.9em;
+    }
+
+    .badge-custom {
+      position: absolute;
+      top: -12px;                /* flota sobre el borde */
+      right: 10px;               /* ahora está alineado a la derecha */
+      padding: 5px 12px;
+      font-size: 0.75em;
+      border-radius: 20px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      color: #fff;
+      background-color: #00a878;
+      z-index: 10;
+    }
+
+    .badge-recomendada {
+      background-color: #444;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -12px;  /* Para que quede sobre el borde */
+      right: 10px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .badge-recomendada::before {
+      content: "⭐";
+      margin-right: 4px;
+    }
+
+    td{
+      border:1px solid #ffffff33;
+      padding: 5px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    th{
+      text-align: center;
+      color:#000;
+      text-transform: uppercase;
+      font-size: 0.8em;
+    }
